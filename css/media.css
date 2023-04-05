@@ -1,0 +1,171 @@
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	.about{
+        display:flex;
+        flex-direction: column-reverse;
+        /* grid-template-rows: 1fr; */
+        justify-content: space-between ;
+        text-align: center;
+        align-items: center;
+        gap: 1.5 rem;
+    }
+    .logo{
+        color: var(--text-color);
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 1px;  
+        
+      }
+      .one{
+        
+        font-size: 15px;
+        font-weight:600;
+        margin-top: 40px;
+        }
+        .two{
+        
+            font-size: 15px;
+            font-weight: 600;
+        
+        }
+        .home-txt h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--text-color);
+            list-style: 2;
+            margin: 0 0 8px;
+            /* letter-spacing: 1px; */
+        }
+        .home-txt h3{
+            color: var(--text-color);
+            margin: 0 0 35px;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.1;
+        
+        }
+        .home-txt p{
+            color: var(--second-color);
+            font-size: 15px;
+            line-height:1.8;
+            margin-bottom: 40px;
+        }
+        .btn{
+            margin-left: 5px;
+            padding: 3px 14px;
+        }
+        .btn3{
+            margin-bottom: 10px;
+            
+        }
+        .contact{
+            background: var(--second-bg-color);
+            display: flex;
+            /* grid-template-columns: repeat(2,1fr); */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .top {
+            margin-left: 100%;
+
+        }
+        .skills-content{
+            display: grid;
+            grid-template-columns: repeat(2,220px);
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 5rem;
+        }
+        .box{
+            
+            padding: 10px 30px;
+          
+        }
+        .portpolio-content{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+    /* tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) 
+{
+    .home-txt h1{
+        font-size: 39px;
+        font-weight: 700;
+        color: var(--text-color);
+        list-style: 2;
+        margin: 0 0 8px;
+        
+    }
+    .home-txt h3{
+        color: var(--text-color);
+        margin: 0 0 35px;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.1;
+    
+    }
+    .home-txt p{
+        color: var(--second-color);
+        font-size: 15px;
+        line-height:1.8;
+        margin-bottom: 40px;
+    }
+    .logo{
+        color: var(--text-color);
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+    .one{
+        
+            font-size: 15px;
+            font-weight:600;
+            margin-top: 40px;
+            }
+    .two{
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 40px;
+        }
+        .about{
+            display:flex;
+            flex-direction: column-reverse;
+            /* grid-template-rows: 1fr; */
+            justify-content: space-between ;
+            text-align: center;
+            align-items: center;
+            gap: 1.5 rem;
+            
+        }
+        .btn{
+            margin-left: 5px;
+            padding: 5px 10px;
+        }
+        .top {
+            margin-left: 100%;
+
+        }
+        .skills-content{
+            display: grid;
+            grid-template-columns: repeat(2,250px);
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 5rem;
+        }
+        .portpolio-content{
+            grid-template-columns: repeat(2,1fr);
+        }
+         .contact{
+            background: var(--second-bg-color);
+            display: flex;
+            /* grid-template-columns: repeat(2,1fr); */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+        }
+}
