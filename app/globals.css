@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@300;400;600;700;800;900&family=Prompt:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #202020;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-7 py-3 bg-main-color text-text-color text-base font-semibold tracking-wide rounded transition-all duration-300 ease-in-out ml-2.5;
+  }
+
+  .btn:hover {
+    @apply scale-90 tracking-widest;
+  }
+
+  .section-padding {
+    @apply py-20 px-[10%] pt-20;
+  }
+
+  .main-text {
+    @apply text-center;
+  }
+
+  .main-text h1 {
+    @apply leading-none text-h2;
+  }
+
+  .main-text p {
+    @apply text-h2 font-bold mb-2.5;
+  }
+
+  .skills-content {
+    @apply grid grid-cols-3 justify-center items-center gap-10 mt-20;
+  }
+
+  .skill-box {
+    @apply bg-bg-color p-9 rounded-lg transition-all duration-300 ease-in-out;
+  }
+
+  .skill-box:hover {
+    @apply -translate-y-4 cursor-pointer;
+  }
+
+  .s-icons {
+    @apply text-5xl mb-5 text-main-color;
+  }
+
+  .skill-box h3 {
+    @apply text-3xl font-semibold text-text-color mb-4 uppercase;
+  }
+
+  .skill-box p {
+    @apply text-second-color text-base leading-8 bg-[#333333] mb-6;
+  }
+
+  .read {
+    @apply inline-block px-4 py-2 bg-[#333333] text-second-color text-sm font-medium rounded-lg transition-all duration-300 ease-in-out;
+  }
+
+  .read:hover {
+    @apply bg-main-color text-text-color tracking-widest;
+  }
+
+  .portfolio-content {
+    @apply grid grid-cols-3 items-center justify-center gap-8 mt-20;
+  }
+
+  .portfolio-row {
+    @apply relative overflow-hidden rounded-lg cursor-pointer;
+  }
+
+  .portfolio-row img {
+    @apply w-full rounded-lg block transition-transform duration-500;
+  }
+
+  .portfolio-layer {
+    @apply w-full h-0 bg-gradient-to-t from-black/10 to-[#ff004f] absolute rounded-lg left-0 bottom-0 overflow-hidden flex flex-col items-center justify-center text-center px-10 transition-all duration-500;
+  }
+
+  .portfolio-row:hover img {
+    @apply scale-110;
+  }
+
+  .portfolio-row:hover .portfolio-layer {
+    @apply h-full;
+  }
+
+  .portfolio-layer h5 {
+    @apply text-xl font-semibold mb-4;
+  }
+
+  .portfolio-layer p {
+    @apply text-second-color text-xs leading-8;
+  }
+
+  .portfolio-layer i {
+    @apply text-main-color mt-5 text-xl bg-text-color w-[60px] h-[60px] flex justify-center items-center rounded-full;
+  }
+
+  .contact-icons i {
+    @apply h-11 w-11 bg-main-color text-text-color text-xl inline-flex items-center justify-center rounded-full mr-4 transition-all duration-300 ease-in-out mt-5;
+  }
+
+  .contact-icons i:hover {
+    @apply bg-text-color text-main-color;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    @apply w-full p-2.5 bg-bg-color text-text-color border border-black outline-none text-sm rounded-lg mb-2.5;
+  }
+
+  .contact-form textarea {
+    @apply resize-none h-60;
+  }
+
+  .contact-form .submit {
+    @apply inline-block text-xs bg-main-color text-text-color w-32 transition-all duration-300 ease-in-out;
+  }
+
+  .contact-form .submit:hover {
+    @apply scale-110 cursor-pointer bg-[#D11D27];
+  }
+
+  .sticky {
+    @apply bg-bg-color border-b border-main-color py-3 px-[15%];
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-800 {
+  animation-delay: 800ms;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Custom hover effects for social icons */
+.whatsapp:hover {
+  background-color: #075e54 !important;
+  color: white !important;
+}
+
+.insta:hover {
+  background-color: #c13584 !important;
+  color: white !important;
+}
+
+.github:hover {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+.linkeln:hover {
+  background-color: #0072b1 !important;
+  color: white !important;
+}
+
+.mail:hover {
+  background-color: #ea4335 !important;
+  color: white !important;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .skills-content {
+    @apply grid-cols-2 gap-6;
+  }
+
+  .portfolio-content {
+    @apply grid-cols-1;
+  }
+
+  .contact {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .skills-content {
+    @apply grid-cols-2 gap-6;
+  }
+
+  .portfolio-content {
+    @apply grid-cols-2;
+  }
+
+  .contact {
+    @apply flex flex-col justify-center items-center;
+  }
+}
