@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         {/* Main heading with gradient text */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none mb-6 animate-fade-in-up animation-delay-200">
+        <h1 className="text-4xl sm:text-7xl md:text-7xl lg:text-8xl font-black leading-none mb-6 animate-fade-in-up animation-delay-200">
           <span className="bg-gradient-to-r from-text-color via-main-color to-accent-color bg-clip-text text-transparent">
             Bhuvanesvaran R
           </span>
@@ -43,7 +43,7 @@ export default function Home() {
         </h2>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-second-color leading-relaxed mb-12 max-w-4xl mx-auto animate-fade-in-up animation-delay-600">
+        <p className="text-lg sm:text-sm md:text-xl text-second-color leading-relaxed mb-12 max-w-4xl mx-auto animate-fade-in-up animation-delay-600">
           Software Engineer with experience building scalable, responsive UIs
           and features across React.js, Next.js, and Angular.js. Comfortable
           collaborating in Agile teams, shipping features, writing automated
@@ -75,11 +75,6 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-main-color rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-main-color rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
       </div>
     </section>
   );
